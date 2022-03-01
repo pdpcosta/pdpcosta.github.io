@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0062)http://www.dca.fee.unicamp.br/~paula/CH-Unicamp/structure.html -->
+<html class="gr__dca_fee_unicamp_br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.7.2 (Linux)">
+	<meta name="author" content="Paula Costa">
+	<meta name="created" content="20130516;0">
+	<meta name="changedby" content="Paula Costa">
+	<meta name="changed" content="20150123;152258187884789">
+	<meta name="changedby" content="Paula Costa">
+	<style type="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.08in }
+		td p { margin-bottom: 0in }
+		p.sdfootnote { margin-left: 0.24in; text-indent: -0.24in; margin-bottom: 0in; font-size: 10pt }
+		h2.western { font-family: "Albany", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Droid Sans Fallback"; font-size: 16pt }
+		h2.ctl { font-family: "FreeSans"; font-size: 16pt }
+		a:link { so-language: zxx }
+		a.sdfootnoteanc { font-size: 57% }
+	-->
+	</style>
+</head>
+<body lang="en-US" dir="ltr" style="background: transparent" data-gr-c-s-loaded="true">
+<h2 class="western" align="center"><font face="Times New Roman, serif">Driver Gaze Zone Dataset With Depth Data Structure</font></h2>
+<p><br><br>
+</p>
+<p style="margin-bottom: 0in">The <b>DG-Unicamp Driver Gaze Zone Dataset</b> is composed of a set of Color, Infrareds and Depth images</p>
+<p style="margin-bottom: 0in">anda text file with face detection bounding box for some of the images</p>
+<p style="margin-bottom: 0in">The images are saved as BMP and YAML 1.0 files without compression and resolution 240 x 320 pixels.</p>
+<div align="center">
+  <p>
+    <img src="./structure_files/car_points.jpg" width="600" height="500" alt="" align="middle">
+    <br>
+    <br>
+  </p>
+</div>
+<p style="margin-bottom: 0in">The images are separeted by driver ID folders where each folder has images from all 19 points of interest of the front car view with below structure </p>
+<p style="margin-bottom: 0in">[driver_id]_[point]_[camera_type]_[frame_number].[bmp/yaml]
+</p>
+<p style="margin-bottom: 0in">Example
+</p>
+D:.</p>
+├───data</p>
+&emsp;├───p044</p>
+&emsp;&emsp;├───44_10_depth_0.yaml</p>
+&emsp;&emsp;├───44_10_ir1_0.bmp</p>
+&emsp;&emsp;├───44_10_ir2_0.bmp</p>
+&emsp;&emsp;├───44_10_rgb_0.bmp</p>
+</p>
+<p style="margin-bottom: 0in"><br>
+</p>
+<p style="margin-bottom: 0in">We used the OpenCV face detection algorithm based on DNN
+</p>
+<p style="margin-bottom: 0in">OpenCV’s deep learning face detector is based on the Single Shot Detector (SSD) framework with a ResNet base network
+</p>
+<p style="margin-bottom: 0in">The face detection bounding box file has the structure:</p>
+
+<ul>
+  <li>first line we have the file name</li>
+  <li>second line we have the confidence level of the detection and the upper left bounding box position followed by the bottom right point.</li>
+</ul>
+<p style="margin-bottom: 0in">We have the face detection algorithm results running on the IR and RGB images
+</p>
+<p style="margin-bottom: 0in">
+</p>
+<!--
+<div id="sdfootnote1">
+	<p class="sdfootnote" style="margin-bottom: 0.2in"><a class="sdfootnotesym" name="sdfootnote1sym" href="http://www.dca.fee.unicamp.br/~paula/CH-Unicamp/structure.html#sdfootnote1anc">1</a>N1
+	e N2 are computed from RN1, LN1 and RN2, LN2, respectively.</p>
+</div>
+-->
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

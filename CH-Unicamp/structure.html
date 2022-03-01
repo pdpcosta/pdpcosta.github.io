@@ -1,0 +1,755 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.7.2 (Linux)">
+	<meta name="author" content="Paula Costa">
+	<meta name="created" content="20130516;0">
+	<meta name="changedby" content="Paula Costa">
+	<meta name="changed" content="20150123;152258187884789">
+	<meta name="changedby" content="Paula Costa">
+	<style type="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.08in }
+		td p { margin-bottom: 0in }
+		p.sdfootnote { margin-left: 0.24in; text-indent: -0.24in; margin-bottom: 0in; font-size: 10pt }
+		h2.western { font-family: "Albany", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Droid Sans Fallback"; font-size: 16pt }
+		h2.ctl { font-family: "FreeSans"; font-size: 16pt }
+		a:link { so-language: zxx }
+		a.sdfootnoteanc { font-size: 57% }
+	-->
+	</style>
+</head>
+<body lang="en-US" dir="ltr" style="background: transparent">
+<h2 class="western" align="center"><font face="Times New Roman, serif">CH-Unicamp
+Expressive Visemes Database Structure</font></h2>
+<p><br><br>
+</p>
+<p style="margin-bottom: 0in">The <b>CH-Unicamp Expressive Visemes
+</b><b>Images </b><b>Database</b> is composed of a set of images and
+a spreadsheet CSV (Comma Separated Values) file which carries
+information about each image in the database.</p>
+<p style="margin-bottom: 0in">The images are saved as PNG files
+without compression and resolution 1920 x 1080 pixels.</p>
+<p style="margin-bottom: 0in">The spreadsheet CSV file has the
+following structure:</p>
+<p style="margin-bottom: 0in"><br>
+</p>
+<p style="margin-bottom: 0in">The CSV file is organized as follows:</p>
+<ul>
+	<li><p style="margin-bottom: 0in">no header</p>
+	<li><p style="margin-bottom: 0in">each row carries the information
+	of an specific image</p>
+	<li><p style="margin-bottom: 0in">each column corresponds to an
+	specific information, as follows:</p>
+	<li><p style="margin-bottom: 0in">First Column → &lt;image_filename&gt;</p>
+	<li><p style="margin-bottom: 0in">Second Column → corresponding
+	emotion</p>
+	<li><p style="margin-bottom: 0in">Columns 3 to 7 → phonetic
+	context, phones are represented using PRAAT notation</p>
+	<li><p style="margin-bottom: 0in">Column 3 → second phone at left</p>
+	<li><p style="margin-bottom: 0in">Column 4 → first phone at left</p>
+	<li><p style="margin-bottom: 0in">Column 5 → phone represented by
+	the image viseme (center phone, phone of interest)</p>
+	<li><p style="margin-bottom: 0in">Column 6 → first phone at right</p>
+	<li><p style="margin-bottom: 0in">Column 7 → second phone at right</p>
+	<li><p style="margin-bottom: 0in">Column 8 → corresponding Context
+	Dependent Viseme</p>
+	<li><p style="margin-bottom: 0in">Column 9 → word or phrase
+	corresponding to the context where the image viseme was captured</p>
+	<li><p style="margin-bottom: 0in">Columns 10 to 65 → pair of x and
+	y coordinates of landmarks manually annotated in the face.</p>
+</ul>
+<dl>
+	<dl>
+		<dl>
+			<dl>
+				<dl>
+					<dd>
+					<table width="277" cellpadding="4" cellspacing="0">
+						<col width="139">
+						<col width="120">
+						<tr valign="top">
+							<td width="139" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>Column</p>
+							</td>
+							<td width="120" style="border: 1px solid #000000; padding: 0.04in">
+								<p>Landmark</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>10</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RM2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>11</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LM2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>12</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>CUM</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>13</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>CLM</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>14</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>VMR</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>15</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>VML</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>16</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RM1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>17</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LM1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>18</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RM3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>19</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LM3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>20</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REB1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>21</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REB2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>22</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REB3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>23</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEB1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>24</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEB2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>25</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEB3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>26</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REYE1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>27</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REYE3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>28</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REYE2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>29</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REYE4</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>30</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEYE1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>31</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEYE3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>32</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEYE2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>33</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEYE4</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>34</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RN1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>35</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LN1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>36</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>N1<a class="sdfootnoteanc" name="sdfootnote1anc" href="#sdfootnote1sym"><sup>1</sup></a></p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>37</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>N3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>38</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RN3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>39</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LN3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>40</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RN2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>41</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LN2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>42</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>N2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>43</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>N4</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>44</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>HC</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>45</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>HR</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>46</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>HL</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>47</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>CJAW</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>48</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RJAW2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>49</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LJAW2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>50</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RJAW1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>51</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LJAW1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>52</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REAR1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>53</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REAR2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>54</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REAR3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>55</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>REAR4</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>56</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEAR1</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>57</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEAR2</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>58</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEAR3</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>59</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LEAR4</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>60</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RM4</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>61</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>RM5</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>62</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>CIUM</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>63</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>CILM</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>64</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LM4</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="139" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>65</p>
+							</td>
+							<td width="120" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>LM5</p>
+							</td>
+						</tr>
+					</table>
+				</dl>
+			</dl>
+		</dl>
+	</dl>
+</dl>
+<p style="margin-bottom: 0in"><br>
+</p>
+<dl>
+	<dl>
+		<dl>
+			<dl>
+				<dl>
+					<dd>
+					<table width="277" cellpadding="4" cellspacing="0">
+						<col width="137">
+						<col width="122">
+						<tr valign="top">
+							<td width="137" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>Prefix/Identifier</p>
+							</td>
+							<td width="122" style="border: 1px solid #000000; padding: 0.04in">
+								<p>Meaning</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>RM</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Right Mouth</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>LM</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Left Mouth</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>REB</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Right Eyebrow</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>LEB</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Left Eyebrow</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>REYE</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Right Eye</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>LEYE</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Left Eye</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>RN</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Right Nose</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>LN</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Left Nose</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>N</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Nose</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>HC</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Head Center</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>HR</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Head Right</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>HL</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Head Left</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>CJAW</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Center Jaw</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>RJAW</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Right Jaw</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>LJAW</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Left Jaw</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>REAR</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Right Ear</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>LEAR</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Left Ear</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>CUM</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Center Upper at Mouth</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>CLM</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Center Lower at Mouth</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>VMR</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Right V of Mouth (Superior Lips)</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>VML</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Left V of Mouth (Superior Lips)</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>CIUM</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Center Internal Upper Mouth</p>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td width="137" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+								<p>CILM</p>
+							</td>
+							<td width="122" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+								<p>Center Internal Lower Mouth</p>
+							</td>
+						</tr>
+					</table>
+				</dl>
+			</dl>
+		</dl>
+	</dl>
+</dl>
+<p style="margin-bottom: 0in"><br>
+</p>
+<p style="margin-bottom: 0in"><br>
+</p>
+<div id="sdfootnote1">
+	<p class="sdfootnote" style="margin-bottom: 0.2in"><a class="sdfootnotesym" name="sdfootnote1sym" href="#sdfootnote1anc">1</a>N1
+	e N2 are computed from RN1, LN1 and RN2, LN2, respectively.</p>
+</div>
+</body>
+</html>
