@@ -1,1 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]   # or your default branch
+  workflow_dispatch:
+
+# IMPORTANT: set at workflow level so all jobs inherit
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Recommended so only one deploy runs at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Optional: if you have a build step (adjust as needed)
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      # - run: npm ci && npm run build
+
+      # Upload the artifact that will be deployed
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist   # ← change to your output folder (e.g., `.` for pure static, `build`, `public`, etc.)
+
+  deploy:
+    # CRITICAL: the Pages deploy job must target the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
 
